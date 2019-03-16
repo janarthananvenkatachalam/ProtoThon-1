@@ -1,0 +1,46 @@
+
+#include <iostream.h>
+
+int main()
+
+{
+    int o;
+    float a,b;
+
+    cout << "Enter the recquired option 1.+\n2.-\n3.*\n4./\n ";
+    cin >> o;
+
+    cout << "Enter two operands: ";
+    cin >> a >> b;
+    if((b==0)&&(o==4))
+    {
+        cout << "cannot divide with zero";
+    }
+    switch(o)
+    {
+        case (1):
+            cout << a+b;
+            break;
+
+        case (2):
+            cout << a-b;
+            break;
+
+
+        case (3):
+            cout << a*b;
+            break;
+
+        case (4):
+            cout << a/b;
+            break;
+
+        default:
+            cout << "Enter the correct option";
+            break;
+    }
+
+   
+}
+    
+
