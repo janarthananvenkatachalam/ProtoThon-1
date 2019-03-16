@@ -1,0 +1,17 @@
+import math
+a=[]
+i=0
+a=input("enter the number")
+l=a.split(',')
+n=len(l)
+_sum = 0
+sq=0
+for i in range(n):
+    sq=float(l[i])*float(l[i])
+    _sum=_sum+sq
+
+_sum=_sum/n
+_sum=math.sqrt(_sum)
+print("The RMS value is %0.4f"%(_sum))
+
+
